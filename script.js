@@ -434,7 +434,6 @@ document.addEventListener("DOMContentLoaded", async () => {
       },
     );
     const authData = await authResponse.json();
-    console.log("Auth status:", authData);
   } catch (e) {
     console.error("Erro ao checar autenticação:", e);
   }
@@ -447,7 +446,6 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   knockoutGenerated = stateData.knockoutGenerated;
 
-  console.log("Admin logado:", isAdmin);
   if (isAdmin) {
     saveBtn.classList.remove("hidden");
     logoutBtn.classList.remove("hidden");
@@ -584,9 +582,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 fetch("https://copa-do-mundo-2026-7gbp.onrender.com/api/test")
   .then((response) => response.json())
-  .then((data) => console.log(data))
-  .catch((err) => console.log(err));
-
+  .catch(() => {});
 // Tratamento de input numérico nos placares da fase de grupos
 document.addEventListener("input", (event) => {
   if (event.target.classList.contains("score-input")) {
