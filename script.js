@@ -514,6 +514,8 @@ document.addEventListener("DOMContentLoaded", async () => {
   updateKnockoutWinners();
   updateKnockoutWinners();
   updateKnockoutWinners();
+  updateKnockoutWinners();
+  updateKnockoutWinners();
   updateAdminControls();
 
   // Cliques manuais para os terceiros colocados
@@ -614,6 +616,10 @@ document.addEventListener("input", (event) => {
     event.target.value = value;
 
     updatePenaltyInputs();
+    updateKnockoutWinners();
+    updateKnockoutWinners();
+    updateKnockoutWinners();
+    updateKnockoutWinners();
     updateKnockoutWinners();
   }
 });
@@ -969,3 +975,6 @@ window.addEventListener("load", () => {
     }
   }
 });
+
+
+// Fim
