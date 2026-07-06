@@ -512,6 +512,8 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
   updatePenaltyInputs();
   updateKnockoutWinners();
+  updateKnockoutWinners();
+  updateKnockoutWinners();
   updateAdminControls();
 
   // Cliques manuais para os terceiros colocados
